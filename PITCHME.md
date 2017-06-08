@@ -2,11 +2,19 @@
 
 ---
 
-# What is Serverless
+# What is Serverless?
 
 +++
 
+# Misleading name
 
+we still have servers - just not on our premises
+
++++
+
+# A better name?
+
+## Function as a Service (FaaS)
 
 ---
 
@@ -16,17 +24,25 @@
 
 # Amazon Web Services
 
+## Lambda
+
 +++
 
 # Microsoft
+
+## Azure Functions
 
 +++
 
 # Google
 
+## Cloud Functions
+
 +++
 
 # IBM
+
+## Bluemix OpenWhisk
 
 ---
 
