@@ -48,9 +48,9 @@
 
 # AWS CloudFormation
 
----
+---?image=assets/glenn-carstens-peters-203007.jpg
 
-# Live Demo
+# Hands-On Demo
 
 ---?image=assets/question-mark-1872665_1920.jpg
 
@@ -63,6 +63,7 @@
 References:
 
 question-mark-1872665_1920.jpg: https://pixabay.com/de/fragezeichen-wichtig-anmelden-1872665/
+glenn-carstens-peters-203007.jpg: https://unsplash.com/@glenncarstenspeters?photo=npxXWgQ33ZQ
 
 
 -->
