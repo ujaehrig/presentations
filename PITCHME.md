@@ -58,15 +58,17 @@ Function as a Service (FaaS)
 
 +++
 
-# AWS Dynamo DB - Overview
+# AWS Dynamo DB
+## Overview
 
 * Tables
 * Items
 * Attibutes
 
----
++++
 
-# AWS Dynamo DB - Indexes
+# AWS Dynamo DB
+## Indexes
 
 * Primary Key
   * Partition key
@@ -76,9 +78,10 @@ Function as a Service (FaaS)
   * Local secondary index
 * Queries
 
----
++++
 
-# AWS Dynamo DB - Features
+# AWS Dynamo DB
+## Features
 
 * Streams
 * Types
