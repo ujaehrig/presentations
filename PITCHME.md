@@ -14,7 +14,7 @@ we still have servers - just not on our premises
 
 # A better name?
 
-## Function as a Service (FaaS)
+Function as a Service (FaaS)
 
 ---
 
@@ -46,21 +46,49 @@ we still have servers - just not on our premises
 
 ---
 
-# AWS Serverless
-
-+++
-
 # AWS Lambda
 
-+++
+---
 
 # AWS API Gateway
 
-+++
+---
 
 # AWS Dynamo DB
 
 +++
+
+# AWS Dynamo DB - Overview
+
+* Tables
+* Items
+* Attibutes
+
+---
+
+# AWS Dynamo DB - Indexes
+
+* Primary Key
+  * Partition key
+  * Partition key & sort key
+* Secondary Indexes
+  * Global secondary index
+  * Local secondary index
+* Queries
+
+---
+
+# AWS Dynamo DB - Features
+
+* Streams
+* Types
+* Consistency
+  * Eventually Consistent Reads
+  * Strongly Consistent Reads
+* Provisioned Throughput
+  * Predefined
+  * Throttles
+
 
 # AWS CloudFormation
 
