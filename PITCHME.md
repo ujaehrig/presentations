@@ -3,11 +3,11 @@
 
 +++
 
-Lambda Expressions
-Method References
-Default Methods
-Stream API
-Date-Time API
+* Lambda Expressions
+* Method References |
+* Default Methods |
+* Stream API |
+* Date-Time API |
 
 ---
 
