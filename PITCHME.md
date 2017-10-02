@@ -19,17 +19,19 @@
 +++
 
 ```java
-Thread.start(new Runnable() {
-    public void run() {
-        System.out.println("I'm running in Thread: " + Thread.currentThread());
-    }
-});
+final ExecutorService executorService = Executors.newCachedThreadPool();
 
-Thread.start(() -> System.out.println("I'm running in Thread: " + Thread.currentThread()));
+executorService.submit(new Runnable() {
+    @Override
+        public void run() {
+            System.out.println("Anonymous is in thread: " + currentThread());
+        }
+    });
 
+executorService.submit(() -> System.out.println("Lambda is in thread: " + currentThread()));
 ```
-@[1-5]
-@[7]
+@[3-8]
+@[10]
 
 ---
 
