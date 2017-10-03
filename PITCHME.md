@@ -3,6 +3,7 @@
 
 +++
 
+- Functional Interfaces
 - Lambda Expressions
 - Method References |
 - Default Methods |
@@ -11,27 +12,55 @@
 
 ---
 
+### Functional Interfaces
+
+- java.util.function
+
+
+---
+
 ### Lambda Expressions
 
-- Instead of anonymous class
-- Syntax: `(params) -> code`
+- Uses functional interfaces
+- Replacement for some anonymous classes |
+-   but consider the **scope** | 
+- Syntax: `(params) -> code` |
 
 +++
 
 ```java
-final ExecutorService executorService = Executors.newCachedThreadPool();
+ExecutorService executorService = Executors.newCachedThreadPool();
 
 executorService.submit(new Runnable() {
     @Override
         public void run() {
-            System.out.println("Anonymous is in thread: " + currentThread());
+            out.println("Anonymous is in thread: " + currentThread());
         }
     });
 
-executorService.submit(() -> System.out.println("Lambda is in thread: " + currentThread()));
+executorService.submit(() -> out.println("Lambda is in thread: " + currentThread()));
 ```
-@[3-8]
-@[10]
+@[3-8](with anonymous class)
+@[10](with lambda)
+
++++
+
+### Best practices
+
+- **Use @FunctionalInterface** on functional interfaces
+- **Avoid** too many default methods
+- Use **parameter inference**
+- **Omit** parentheses on single arguments
+- Keep lambda expressions **short**
+
++++
+
+### Best practices
+
+- Avoid blocks
+- Avoid return statements
+- Avoid side effects
+- Prefer method references
 
 ---
 
