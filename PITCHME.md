@@ -3,10 +3,18 @@
 
 +++
 
+### Overview
+
 - Functional Interfaces
 - Lambda Expressions
 - Method References |
 - Default Methods |
+
++++
+
+### Overview
+
+- Optional 
 - Stream API |
 - Date-Time API |
 
@@ -112,4 +120,7 @@ System.out::println
 
 
 
-
+https://blog.idrsolutions.com/2014/10/5-minutes-explanation-java-lambda-expression/
+https://blog.idrsolutions.com/2014/11/java-8-streams-explained-5-minutes/
+https://blog.idrsolutions.com/2015/01/java-8-default-methods-explained-5-minutes/
+https://blog.idrsolutions.com/2015/02/java-8-method-references-explained-5-minutes/
