@@ -6,9 +6,9 @@
 ### Overview
 
 - Functional Interfaces
-- Lambda Expressions
-- Method References |
 - Default Methods |
+- Lambda Expressions |
+- Method References |
 
 +++
 
@@ -63,10 +63,10 @@ executorService.submit(() -> out.println("Lambda is in thread: " + currentThread
 ### Best practices
 
 - **Use @FunctionalInterface** on functional interfaces
-- **Avoid** too many default methods
-- Use **parameter inference**
-- **Omit** parentheses on single arguments
-- Keep lambda expressions **short**
+- **Avoid** too many default methods |
+- Use **parameter inference** |
+- **Omit** parentheses on single arguments |
+- Keep lambda expressions **short** |
 
 +++
 
@@ -112,15 +112,50 @@ System.out::println
 
 ---
 
+### Optional
+
+- Replacement for null
+- Enhanced Guava Option
+- Provides useful methods
+
++++
+
+### Examples
+
+```java
+Optional<Integer> opt = Optional.of(100);
+
+opt.isPresent();
+opt.fiter(i -> i > 10);
+opt.isPresent(System.out::println);
+opt.map(String::toString);
+opt.orElse(0);
+opt.orElseThrow(IllegalArgumentException::new)
+
+```
+@[3](Simple presence check)
+@[4](If present, do additional check)
+@[5](If present, do something)
+@[6](If present, return mapped element)
+@[7](If not present, return default)
+@[8](If not present, throw specific exception)
+
+---
+
 ### Stream API
+
 
 ---
 
 ### Data-Time API
 
 
+---
 
-https://blog.idrsolutions.com/2014/10/5-minutes-explanation-java-lambda-expression/
-https://blog.idrsolutions.com/2014/11/java-8-streams-explained-5-minutes/
-https://blog.idrsolutions.com/2015/01/java-8-default-methods-explained-5-minutes/
-https://blog.idrsolutions.com/2015/02/java-8-method-references-explained-5-minutes/
+### Useful Links
+
+- https://blog.idrsolutions.com/2014/10/5-minutes-explanation-java-lambda-expression/
+- https://blog.idrsolutions.com/2014/11/java-8-streams-explained-5-minutes/
+- https://blog.idrsolutions.com/2015/01/java-8-default-methods-explained-5-minutes/
+- https://blog.idrsolutions.com/2015/02/java-8-method-references-explained-5-minutes/
+- https://blog.idrsolutions.com/2015/04/java-8-optional-class-explained-in-5-minutes/
