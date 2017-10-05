@@ -5,7 +5,7 @@
 
 ### Overview
 
-- Functional Interfaces
+- Functional Interfaces |
 - Default Methods |
 - Lambda Expressions |
 - Method References |
@@ -14,7 +14,7 @@
 
 ### Overview
 
-- Optional 
+- Optional |
 - Stream API |
 - Date-Time API |
 
@@ -23,7 +23,7 @@
 ### Functional Interfaces
 
 - java.util.function |
-- Predicate | 
+- Predicate |
 - Consumer |
 - Supplier |
 
@@ -31,16 +31,16 @@
 
 ### Default Methods
 
-- Allows code in interfaces
+- Allows code in interfaces |
 
 ---
 
 ### Lambda Expressions
 
-- Uses functional interfaces
+- Uses functional interfaces |
 - Replacement for some anonymous classes |
-- but consider the **scope** |
-- Syntax: `(params) -> code` |
+- but consider the scope |
+- Syntax: (params) -> code |
 
 +++
 
@@ -65,30 +65,30 @@ executorService.submit(() -> out.println("Lambda is in thread: " + currentThread
 
 ### Best practices
 
-- **Use @FunctionalInterface** on functional interfaces
-- **Avoid** too many default methods |
-- Use **parameter inference** |
-- **Omit** parentheses on single arguments |
-- Keep lambda expressions **short** |
+- Use @FunctionalInterface on functional interfaces |
+- Avoid too many default methods |
+- Use parameter inference |
+- Omit parentheses on single arguments |
+- Keep lambda expressions short |
 
 +++
 
 ### Best practices
 
-- Avoid blocks
-- Avoid return statements
-- Avoid side effects
-- Prefer method references
+- Avoid blocks |
+- Avoid return statements |
+- Avoid side effects |
+- Prefer method references |
 
 ---
 
 ### Method References
 
-- Instead of Lambda
-- to static `Class::staticMethod`
-- to constructor: `Class::new`
-- to instance method: `Class::instanceMethod`
-- to method of object: `object::instanceMethod`
+- Instead of Lambda |
+- to static Class::staticMethod |
+- to constructor: Class::new |
+- to instance method: Class::instanceMethod |
+- to method of object: object::instanceMethod |
 
 +++
 
@@ -117,31 +117,32 @@ System.out::println
 
 ### Optional
 
-- Replacement for null
-- Enhanced Guava Option
-- Provides useful methods
+- Replacement for null |
+- Enhanced Guava Option |
+- Provides useful methods |
 
 +++
 
 ### Examples
 
 ```java
-Optional<Integer> opt = Optional.of(100);
+{
+    Optional<Integer> opt = Optional.of(100);
 
-opt.isPresent();
-opt.fiter(i -> i > 10);
-opt.isPresent(System.out::println);
-opt.map(String::toString);
-opt.orElse(0);
-opt.orElseThrow(IllegalArgumentException::new)
-
+    opt.isPresent();
+    opt.fiter(i -> i > 10);
+    opt.isPresent(System.out::println);
+    opt.map(String::toString);
+    opt.orElse(0);
+    opt.orElseThrow(IllegalArgumentException::new)
+}
 ```
-@[3](Simple presence check)
-@[4](If present, do additional check)
-@[5](If present, do something)
-@[6](If present, return mapped element)
-@[7](If not present, return default)
-@[8](If not present, throw specific exception)
+@[4](Simple presence check)
+@[5](If present, do additional check)
+@[6](If present, do something)
+@[7](If present, return mapped element)
+@[8](If not present, return default)
+@[9](If not present, throw specific exception)
 
 ---
 
