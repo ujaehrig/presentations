@@ -23,8 +23,11 @@
 ### Functional Interfaces
 
 - java.util.function
+- Predicate | 
+- Consumer |
+- Supplier |
 
-+++
+---
 
 ### Default Methods
 
@@ -36,7 +39,7 @@
 
 - Uses functional interfaces
 - Replacement for some anonymous classes |
--   but consider the **scope** | 
+- but consider the **scope** |
 - Syntax: `(params) -> code` |
 
 +++
