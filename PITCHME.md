@@ -22,7 +22,7 @@
 
 ### Functional Interfaces
 
-- java.util.function
+- java.util.function |
 - Predicate | 
 - Consumer |
 - Supplier |
