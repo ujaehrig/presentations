@@ -1,0 +1,8 @@
+.reveal .fragment .visible .current-fragment {
+    color: rgb(255, 255, 255);
+}
+
+.reveal .fragment .visible {
+    color: #666;
+}
+
